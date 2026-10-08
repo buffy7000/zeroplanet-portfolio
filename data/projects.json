@@ -1,12 +1,12 @@
 [
   {
     "slug": "real-estate-register",
-    "title": "등기부등본 발급",
-    "summary": "주소 검색부터 일괄 발행, 발행 이력까지 한 곳에서 처리하는 발급 웹앱",
+    "title": "등기부등본 대량발급",
+    "summary": "2~3일씩 걸리던 등기부등본 발급, 단 10분으로 끝",
     "url": "https://zero-real-estate-register.vercel.app",
-    "tags": ["Next.js", "부동산", "업무자동화"],
-    "year": 2026,
+    "tags": ["부동산", "업무자동화"],
     "thumbnail": "/thumbnails/real-estate-register.png",
+    "highlight": { "label": "등기부등본 발급", "from": "2~3일", "to": "10분", "color": "#1d4ed8" },
     "status": "live"
   }
 ]

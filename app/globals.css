@@ -15,7 +15,14 @@ h1{font-size:clamp(32px,5.6vw,56px);letter-spacing:-.04em;line-height:1.15;margi
 .card{display:block;border-top:1px solid #e5e7eb;padding-top:16px}
 .thumb{aspect-ratio:16/10;position:relative;overflow:hidden;background:#f4f4f5;border-radius:4px;transition:background .25s}
 .thumb img{width:100%;height:100%;object-fit:cover;object-position:top;display:block}
-.card:hover .thumb{background:#ececee}
+.card:hover .thumb:not(.hl){background:#ececee}
+.thumb.hl{container-type:inline-size;display:grid;place-items:center;text-align:center;color:#fff;transition:transform .25s}
+.card:hover .thumb.hl{transform:translateY(-3px)}
+.thumb.hl img{position:absolute;inset:0;opacity:.16;filter:blur(2px);object-position:top}
+.hl-text{position:relative}
+.hl-text small{display:block;font-size:4cqw;opacity:.85;margin-bottom:2cqw;font-weight:600}
+.hl-text b{display:block;font-size:14cqw;letter-spacing:-.04em;font-weight:800;line-height:1.1}
+.hl-text em{font-style:normal;color:#ffe066}
 .card:hover h3 .ar{transform:translate(3px,-3px);opacity:1}
 .meta{display:flex;justify-content:space-between;margin-top:14px;gap:12px}
 h3{font-size:17px;font-weight:600;letter-spacing:-.02em;display:flex;gap:6px;align-items:center}
