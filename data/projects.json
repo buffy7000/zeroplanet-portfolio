@@ -1,0 +1,12 @@
+[
+  {
+    "slug": "real-estate-register",
+    "title": "등기부등본 발급",
+    "summary": "주소 검색부터 일괄 발행, 발행 이력까지 한 곳에서 처리하는 발급 웹앱",
+    "url": "https://zero-real-estate-register.vercel.app",
+    "tags": ["Next.js", "부동산", "업무자동화"],
+    "year": 2026,
+    "thumbnail": "/thumbnails/real-estate-register.png",
+    "status": "live"
+  }
+]

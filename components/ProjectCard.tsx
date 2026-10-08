@@ -1,0 +1,33 @@
+export type Project = {
+  slug: string;
+  title: string;
+  summary: string;
+  url: string;
+  tags: string[];
+  year: number;
+  thumbnail?: string;
+  status: "live" | "wip" | "archived";
+};
+
+export default function ProjectCard({ project }: { project: Project }) {
+  return (
+    <a className="card" href={project.url} target="_blank" rel="noopener noreferrer">
+      <div className="thumb">
+        {project.thumbnail && (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img src={project.thumbnail} alt={`${project.title} 화면`} loading="lazy" />
+        )}
+      </div>
+      <div className="meta">
+        <div>
+          <h3>
+            {project.title} <span className="ar">↗</span>
+          </h3>
+          <p className="desc">{project.summary}</p>
+          <p className="tags">{project.tags.join(" · ")}</p>
+        </div>
+        <span className="yr">{project.year}</span>
+      </div>
+    </a>
+  );
+}
