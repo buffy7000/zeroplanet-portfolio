@@ -19,11 +19,7 @@ export default function Home() {
           {site.headline[1]}
         </h1>
         <p className="tagline">{site.tagline}</p>
-        <div className="intro">
-          {site.intro.map((t) => (
-            <p key={t}>{t}</p>
-          ))}
-        </div>
+        <p className="intro">{site.intro.join(" ")}</p>
       </header>
 
       <div className="sec">
